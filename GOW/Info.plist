@@ -4,6 +4,7 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Coalition.ttf</string>
 		<string>CGF Locust Resistance.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>

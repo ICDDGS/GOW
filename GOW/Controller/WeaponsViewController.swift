@@ -99,9 +99,9 @@ extension WeaponsViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! WeaponsCell
         let weapon = arrayWeapons[indexPath.row]
-        cell.wName.text = weapon.name
+        cell.wName.text = NSLocalizedString(weapon.name, comment: "")
         cell.wPoster.image = UIImage(named: weapon.poster)
-        cell.wDescription.text = weapon.description
+        cell.wDescription.text = NSLocalizedString(weapon.description, comment: "")
         return cell
     }
 }
