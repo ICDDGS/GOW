@@ -12,6 +12,32 @@ class GamesViewController: UIViewController {
     
     @IBOutlet weak var imagePageControl: UIPageControl!
     
+    @IBAction func rightSwipeGest(_ sender: Any) {
+        print("Right Swipe")
+        
+        if imagePageControl.currentPage == 0{
+            imagePageControl.currentPage = 7
+            gameImage.image = UIImage(named: String(gamePosters[imagePageControl.currentPage]))
+        }
+        else{
+            imagePageControl.currentPage -= 1
+            gameImage.image = UIImage(named: String(gamePosters[imagePageControl.currentPage]))
+        }
+    }
+    
+    @IBAction func leftSwipeGest(_ sender: Any) {
+        print("Left Swipe")
+        
+        if imagePageControl.currentPage == 7{
+            imagePageControl.currentPage = 0
+            gameImage.image = UIImage(named: String(gamePosters[imagePageControl.currentPage]))
+        }
+        else{
+            imagePageControl.currentPage += 1
+            gameImage.image = UIImage(named: String(gamePosters[imagePageControl.currentPage]))
+        }
+    }
+    
     //datasource :P
     let gamePosters = Array(0...7)
 

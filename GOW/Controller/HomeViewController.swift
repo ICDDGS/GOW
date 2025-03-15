@@ -11,6 +11,7 @@ class HomeViewController: UITableViewController {
     
     @IBOutlet var menuTableView: UITableView!
     
+    //Data Sorce
     let menuOptions : [MenuOption] = [
             MenuOption(
                 title:"Videogames",
@@ -33,6 +34,7 @@ class HomeViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
 
     }
 
