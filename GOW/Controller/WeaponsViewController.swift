@@ -73,18 +73,26 @@ class WeaponsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(named:Constants.backgroundAppColor)
+        UILabel.appearance().textColor = UIColor(named: Constants.letterColor)
+        wTableView.backgroundColor = UIColor(named: Constants.backgroundAppColor)
+        
         
         // Do any additional setup after loading the view.
         wTableView.dataSource = self
         wTableView.delegate = self
         
         let tabItemTag = self.tabBarItem.tag
-        if tabItemTag == 0 {
+        if tabItemTag == Constants.tagCGO {
             arrayWeapons = cgoWeapons
         }
         else{
             arrayWeapons = locusWeapons
         }
+        
+        UITabBar.appearance().tintColor = UIColor.gowRed
+        
+        
     }
     
 }
@@ -99,10 +107,19 @@ extension WeaponsViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! WeaponsCell
         let weapon = arrayWeapons[indexPath.row]
-        cell.wName.text = NSLocalizedString(weapon.name, comment: "")
+
+        cell.wName.text = weapon.name.localized
         cell.wPoster.image = UIImage(named: weapon.poster)
-        cell.wDescription.text = NSLocalizedString(weapon.description, comment: "")
+        cell.wDescription.text = weapon.description.localized
+
+        cell.backgroundColor = UIColor(named: Constants.backgroundAppColor)
+        cell.contentView.backgroundColor = UIColor(named: Constants.backgroundAppColor)
+        cell.contentView.subviews.forEach { subview in
+            subview.backgroundColor = UIColor(named: Constants.backgroundAppColor)
+        }
+
         return cell
     }
+
 }
 

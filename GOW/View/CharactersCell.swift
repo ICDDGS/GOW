@@ -1,22 +1,22 @@
 //
-//  WeaponsCell.swift
+//  CharacterTableViewCell.swift
 //  GOW
 //
-//  Created by Rafael Gonzalez on 07/03/25.
+//  Created by Alejandro on 15/03/25.
 //
 
 import UIKit
 
-class WeaponsCell: UITableViewCell {
+class CharactersCell: UITableViewCell {
 
-    @IBOutlet weak var wName: UILabel!
-    @IBOutlet weak var wPoster: UIImageView!
-    @IBOutlet weak var wDescription: UILabel!
+    @IBOutlet weak var cName: UILabel!
+    @IBOutlet weak var cPoster: UIImageView!
+    @IBOutlet weak var cDescription: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        wName.setCustomFont(fontName: Constants.fontCoalition, size: Constants.fontSize, textStyle: .headline)
+        cName.setCustomFont(fontName: Constants.fontCoalition, size: Constants.fontSize, textStyle: .headline)
         //wDescription.setCustomFont(fontName: Constants.fontCoalition, size: 15)
     }
 

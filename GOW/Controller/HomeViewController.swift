@@ -34,6 +34,10 @@ class HomeViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(named:Constants.backgroundAppColor)
+        
+        UILabel.appearance().textColor = UIColor(named: "GOWText")
+
 
 
     }
@@ -56,7 +60,10 @@ class HomeViewController: UITableViewController {
         let menuOption = menuOptions[indexPath.row]
         cell.menuLabel.text = NSLocalizedString(menuOption.title, comment: "")
         cell.menuImage.image = UIImage(systemName:menuOption.image)
-                return cell
+        cell.backgroundColor = UIColor(named:Constants.backgroundAppColor)
+        cell.tintColor = UIColor(named: "GOWRed")
+
+        return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

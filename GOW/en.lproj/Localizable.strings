@@ -5,3 +5,12 @@
   Created by Alejandro on 14/03/25.
   
 */
+"character.marcus" = "Marcus Fenix";
+"character.marcus.desc" = "Líder legendario de la CGO";
+"character.dominic" = "Dominic Santiago";
+"character.dominic.desc" = "Mejor amigo y compañero de Marcus";
+
+"merch.figure.marcus" = "Figura Marcus";
+"merch.figure.marcus.desc" = "Figura de colección de Marcus Fenix";
+"merch.tshirt.cgo" = "Camiseta CGO";
+"merch.tshirt.cgo.desc" = "Camiseta oficial de la CGO";

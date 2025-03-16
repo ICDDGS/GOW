@@ -12,6 +12,7 @@ class GamesViewController: UIViewController {
     
     @IBOutlet weak var imagePageControl: UIPageControl!
     
+    
     @IBAction func rightSwipeGest(_ sender: Any) {
         print("Right Swipe")
         
@@ -43,9 +44,22 @@ class GamesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(named:Constants.backgroundAppColor)
+        UILabel.appearance().textColor = UIColor(named: Constants.letterColor)
+        
+        //Collors Page Controller
+        imagePageControl.pageIndicatorTintColor = UIColor.gowText
+        imagePageControl.currentPageIndicatorTintColor = UIColor.gowRed
+        
+        //Logo page controller
+        if let gowImage = UIImage(named: "gow_logo"){
+            imagePageControl.preferredIndicatorImage = gowImage
+        }
 
         // Do any additional setup after loading the view.
         imagePageControl.numberOfPages = gamePosters.count
         gameImage.image = UIImage(named: gamePosters.first?.description ?? "0")
     }
+    
+
 }

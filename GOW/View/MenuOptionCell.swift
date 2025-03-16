@@ -18,7 +18,7 @@ class MenuOptionCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         //menuLabel.font = UIFont(name: "CGF Locust Resistance", size: 17)
-        menuLabel.setCustomFont(fontName: Constants.fontMenuTitle, size: Constants.fontSize)
+        menuLabel.setCustomFont(fontName: Constants.fontMenuTitle, size: Constants.fontSize, textStyle: .title1)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

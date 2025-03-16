@@ -1,0 +1,34 @@
+/* 
+  Localizable.strings
+  GOW
+
+  Created by Alejandro on 14/03/25.
+  
+*/
+/* MENU */
+"menu.option.videogames" = "Ludi Electronici";
+"menu.option.weapons" = "Arma";
+"menu.option.characters" = "Personae";
+"menu.option.merchandise" = "Merces";
+
+/* ARMA */
+"weapon.name.boomshot" = "Tormentum Boomshot";
+"weapon.description.boomshot" = "Hoc erat tormentum manuale unius ictus, a Locustis, praesertim Boomers, excogitatum et adhibitum.";
+"weapon.name.hammerburstii" = "Hammerburst II";
+"weapon.description.hammerburstii" = "Hoc erat sclopetum incursatorium Locustorum magnae potestatis. Saepe putatur analogum esse sclopeti incursatorii COG Lancer apud Locustos.";
+"weapon.name.mulcher" = "Mulcher";
+"weapon.description.mulcher" = "Mulcher est gravis machinae tormentariae manuballista, a Coalitione Gubernationum Ordinatarum excogitata.";
+"weapon.name.bolo_grenade" = "Granata Bolo";
+"weapon.description.bolo_grenade" = "Granata Bolo, etiam ut granata fragorica nota, erat granata vexillaria fragorica quam usurpabant Coalitio Gubernationum Ordinatarum, Ordo Locustorum et Swarm.";
+"weapon.name.boltok" = "Pistolum Boltok";
+"weapon.description.boltok" = "Hoc erat sclopetum vexillarium Locustorum, praecipue Dronum. Ratio huius armorum sequitur philosophiam Locustorum, vim brutam exaltando.";
+"weapon.name.lancer" = "Sclopetum Incursatorium Lancer Mark 1";
+"weapon.description.lancer" = "Cognominata Retro Lancer tempore pandemiae Lambent, haec fuit praedecessor sclopeti incursatorii Lancer Mark 2. Primum fuit arma primaria exercitus Coalitionis Gubernationum Ordinatarum, in Bellis Penduli adhibita.";
+"weapon.name.lancer2" = "Sclopetum Incursatorium Lancer Mark 2";
+"weapon.description.lancer2" = "Versio emendata sclopeti incursatorii Lancer Mark 1, cultro serrato motorio instructa, maiori accuratione, minore recussu et maiore capacitate magazini, sed minore vi ignis comparata praedecessori.";
+"weapon.name.sniper" = "Sclopetum Speculatorium Longshot";
+"weapon.description.sniper" = "Hoc erat sclopetum speculatorium unius ictus magni calibri. A Coalitione Gubernationum Ordinatarum excogitatum tempore Bellorum Penduli, Longshot etiam post septemdecim annos post Diem Ascensionis adhibebatur.";
+"weapon.name.hammer_of_dawn" = "Malleus Aurorae";
+"weapon.description.hammer_of_dawn" = "Malleus Aurorae erat laser orbitalis, systemati satelliti subnixus, energia ab Imulsione COG alitus. Eius partes fundamentales inventae sunt a scientia UIR Mauricio Ivo et perfectae a professore Adamo Phoenix postquam haec technologia in Operatione: Aequator ablata est.";
+"weapon.name.mx8" = "Pistolum Snub MX8";
+"weapon.description.mx8" = "Hoc erat arma laterale vexillarium pro militibus Coalitionis Gubernationum Ordinatarum.";
